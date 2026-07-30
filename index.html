@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- EDIT: Ganti dengan nama dan deskripsi Anda -->
+  <title>Hasbial Jamil M.P — Software Developer &amp; IT Support</title>
+  <meta name="description" content="Personal website Hasbial Jamil M.P — Software developer & penulis yang percaya teknologi harus terasa manusiawi." />
+  <meta name="author" content="Hasbial Jamil M.P" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hasbial Jamil M.P — Personal Website" />
+  <meta property="og:description" content="Software developer & penulis. CV, portofolio, dan tulisan pribadi." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon placeholder (ganti dengan file Anda) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23e94560'/><text x='50' y='68' text-anchor='middle' font-family='Arial' font-weight='bold' font-size='42' fill='white'>H</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CUSTOM CURSOR (Signature Element)
+       ============================================================ -->
+  <div class="cursor-dot"  aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" role="navigation" aria-label="Navigasi utama">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <div class="logo-mark">HJM</div><!-- Diisi JS -->
+        <span class="logo-text">Hasbial Jamil M.P</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#hero"        class="nav-link active" id="nav-home">Beranda</a></li>
+        <li><a href="#about"       class="nav-link"        id="nav-about">Tentang</a></li>
+        <li><a href="#experience"  class="nav-link"        id="nav-exp">CV</a></li>
+        <li><a href="#projects"    class="nav-link"        id="nav-projects">Portfolio</a></li>
+        <li><a href="#blog-preview" class="nav-link"       id="nav-blog-prev">Blog</a></li>
+        <li><a href="#contact"     class="nav-link"        id="nav-contact">Kontak</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger + Theme Toggle -->
+      <a href="blog/index.html" class="nav-cta" id="nav-blog-cta">Baca Tulisan →</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Switch between dark and light mode">
+        <svg class="theme-icon-sun" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+        </svg>
+        <svg class="theme-icon-moon" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:none">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+        </svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile">
+    <a href="#hero"         class="mobile-link">Beranda</a>
+    <a href="#about"        class="mobile-link">Tentang Saya</a>
+    <a href="#experience"   class="mobile-link">CV & Pengalaman</a>
+    <a href="#projects"     class="mobile-link">Portfolio</a>
+    <a href="#blog-preview" class="mobile-link">Blog</a>
+    <a href="#contact"      class="mobile-link">Kontak</a>
+    <a href="blog/index.html" class="mobile-link" style="color:var(--color-primary);margin-top:8px">→ Semua Tulisan</a>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section id="hero" aria-label="Perkenalan">
+      <!-- Background blobs (SIGNATURE ELEMENT) -->
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-3" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Status badge -->
+          <div class="hero-badge" aria-label="Status">
+            <span class="dot" aria-hidden="true"></span>
+            <span class="hero-badge-text">Tersedia untuk proyek — Indonesia</span>
+          </div>
+
+          <!-- Nama -->
+          <h1 class="hero-name" id="hero-name">
+            Hasbi<br>
+            <span class="highlight">Al-Jabbar</span>
+          </h1>
+
+          <!-- Profesi (diisi JS) -->
+          <p class="hero-profession" id="hero-profession">Software Developer &amp; IT Support</p>
+
+          <!-- Tagline (diisi JS) -->
+          <p class="hero-tagline" id="hero-tagline">
+            Membangun hal-hal yang bermakna — satu baris kode &amp; satu tulisan dalam satu waktu.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary" id="hero-cta-about">
+              Kenali Saya
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+              </svg>
+            </a>
+            <a href="blog/index.html" class="btn btn-outline" id="hero-cta-blog">
+              Baca Tulisan
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+    <section id="about" aria-label="Tentang Saya">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Left: Story -->
+          <div class="about-text">
+            <p class="section-label reveal">Tentang Saya</p>
+            <h2 class="reveal">Lebih dari sekadar<br>riwayat pekerjaan.</h2>
+
+            <!-- Bio paragraphs diisi JS -->
+            <div id="about-bio"></div>
+
+            <!-- Values diisi JS -->
+            <div class="about-values" id="about-values"></div>
+          </div>
+
+          <!-- Right: Sidebar -->
+          <aside class="about-sidebar">
+            <!-- Profile Card -->
+            <div class="profile-card reveal">
+              <div class="profile-avatar" id="profile-avatar">HJM</div>
+              <h3 id="profile-name">Hasbial Jamil M.P</h3>
+              <p class="profession" id="profile-profession">Software Developer &amp; IT Support</p>
+
+              <div class="profile-meta">
+                <div class="meta-item">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                  <span id="profile-location">Indonesia</span>
+                </div>
+                <div class="meta-item">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <a href="mailto:bhie.dia@gmail.com" id="profile-email" style="color:inherit;transition:color .15s">
+                    bhie.dia@gmail.com
+                  </a>
+                </div>
+                <div class="meta-item">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                  </svg>
+                  <a href="tel:089628188728" id="profile-phone" style="color:inherit;transition:color .15s">
+                    089628188728
+                  </a>
+                </div>
+                <div class="meta-item">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                  </svg>
+                  <span>Open to Work &amp; Collaboration</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interests Card -->
+            <div class="interests-card reveal reveal-delay-1">
+              <h4>// Minat & Hobi</h4>
+              <div class="interests-tags" id="interests-tags">
+                <!-- Diisi JS -->
+              </div>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         EXPERIENCE SECTION
+         ============================================================ -->
+    <section id="experience" aria-label="Pengalaman dan CV">
+      <div class="container">
+        <div class="experience-grid">
+
+          <!-- Left: Skills -->
+          <div>
+            <p class="section-label reveal">Skills</p>
+            <h2 class="reveal" style="margin-bottom:36px">Apa yang<br>saya kuasai.</h2>
+            <div id="skills-list">
+              <!-- Diisi JS -->
+            </div>
+          </div>
+
+          <!-- Right: Timeline -->
+          <div>
+            <p class="section-label reveal">Riwayat</p>
+            <h2 class="reveal" style="margin-bottom:36px">Perjalanan<br>karir & pendidikan.</h2>
+            <div class="timeline" id="timeline">
+              <!-- Diisi JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         ============================================================ -->
+    <section id="projects" aria-label="Projects & Portfolio">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label reveal">Portfolio</p>
+            <h2 class="reveal">Project yang<br>saya kerjakan.</h2>
+          </div>
+        </div>
+        <div class="projects-grid" id="projects-grid">
+          <!-- Diisi JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CERTIFICATES SECTION
+         ============================================================ -->
+    <section id="certificates" aria-label="Sertifikat & Pelatihan">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label reveal">Sertifikasi</p>
+            <h2 class="reveal">Pelatihan &amp;<br>Pencapaian.</h2>
+          </div>
+          <div class="cert-filter-row reveal" id="cert-filters">
+            <!-- Diisi JS -->
+          </div>
+        </div>
+        <div class="cert-grid" id="cert-grid">
+          <!-- Diisi JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         BLOG PREVIEW SECTION
+         ============================================================ -->
+    <section id="blog-preview" aria-label="Tulisan terbaru">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="section-label reveal">Blog</p>
+            <h2 class="reveal">Tulisan terbaru.</h2>
+          </div>
+          <a href="blog/index.html" class="view-all reveal">
+            Semua tulisan
+            <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="blog-grid" id="blog-preview-grid">
+          <!-- Diisi JS -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+    <section id="contact" aria-label="Kontak">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- Left: Info -->
+          <div class="contact-info">
+            <p class="section-label reveal">Kontak</p>
+            <h2 class="reveal">Mari bicara.</h2>
+            <p class="reveal" style="max-width:400px;margin-bottom:40px">
+              Apakah Anda punya proyek menarik, ingin berdiskusi, atau sekadar menyapa — inbox saya selalu terbuka.
+            </p>
+
+            <div class="contact-links reveal" id="social-links">
+              <!-- Diisi JS -->
+            </div>
+
+            <!-- Email direct link -->
+            <a href="mailto:bhie.dia@gmail.com" class="contact-link reveal reveal-delay-2" id="email-link" style="margin-top:12px">
+              <div class="contact-link-icon">
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-weight:500;color:var(--color-text);font-size:0.9rem">Email Langsung</div>
+                <span style="font-size:0.78rem;color:var(--color-text-faint);font-family:var(--font-mono)">bhie.dia@gmail.com</span>
+              </div>
+              <svg style="margin-left:auto;width:14px;height:14px;color:var(--color-text-faint)" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="reveal reveal-delay-2">
+            <div class="contact-form" id="contact-form-wrapper">
+              <h3>Kirim Pesan</h3>
+
+              <form id="contact-form" action="https://formspree.io/f/xvzeyqen" method="POST" novalidate>
+                <div class="form-group">
+                  <label for="form-name">Nama</label>
+                  <input type="text" id="form-name" name="name" placeholder="Nama Anda" required />
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email</label>
+                  <input type="email" id="form-email" name="email" placeholder="email@example.com" required />
+                </div>
+                <div class="form-group">
+                  <label for="form-subject">Subjek</label>
+                  <input type="text" id="form-subject" name="subject" placeholder="Tentang apa?" />
+                </div>
+                <div class="form-group">
+                  <label for="form-message">Pesan</label>
+                  <textarea id="form-message" name="message" placeholder="Ceritakan lebih lanjut..." required></textarea>
+                </div>
+                <button type="submit" class="form-submit" id="form-submit-btn">
+                  Kirim Pesan →
+                </button>
+              </form>
+
+              <!-- Success state -->
+              <div class="form-success" id="form-success" aria-live="polite">
+                <div class="success-icon">✓</div>
+                <p style="font-size:1.1rem;font-weight:600;color:var(--color-text);margin-bottom:8px">
+                  Pesan terkirim!
+                </p>
+                <p>Terima kasih sudah menghubungi. Saya akan membalas secepatnya.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <div class="logo-mark" style="width:28px;height:28px;font-size:0.62rem">HJM</div>
+        <span id="footer-name">© 2026 Hasbial Jamil M.P</span>
+        <span style="margin:0 4px">·</span>
+        <span>Dibuat dengan ♥ dan kopi</span>
+      </div>
+      <div class="footer-right" id="footer-socials">
+        <!-- Diisi JS -->
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
