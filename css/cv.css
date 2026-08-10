@@ -1,0 +1,308 @@
+/* =========================================================
+   cv.css — Styling untuk Halaman CV ATS-Friendly
+   ========================================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-main: 'Georgia', 'Times New Roman', serif;
+  --font-sans: 'Arial', 'Helvetica', sans-serif;
+  --color-black: #111111;
+  --color-dark: #222222;
+  --color-gray: #555555;
+  --color-light-gray: #888888;
+  --color-border: #cccccc;
+  --color-bg: #ffffff;
+  --page-width: 780px;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-black);
+  background: #f0f0f0;
+}
+
+/* -------------------------------------------------------
+   Print Controls (tidak tercetak)
+   ------------------------------------------------------- */
+.print-controls {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 24px;
+  background: #1a1a2e;
+  border-bottom: 2px solid #0f3460;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.btn-print {
+  padding: 8px 20px;
+  background: #e94560;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-print:hover {
+  background: #c73652;
+}
+
+.btn-back {
+  padding: 8px 16px;
+  background: transparent;
+  color: #aaaacc;
+  border: 1px solid #aaaacc;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background: #aaaacc;
+  color: #1a1a2e;
+}
+
+/* -------------------------------------------------------
+   CV Container (Kertas A4)
+   ------------------------------------------------------- */
+.cv-container {
+  max-width: var(--page-width);
+  margin: 72px auto 48px;
+  background: var(--color-bg);
+  padding: 48px 56px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* -------------------------------------------------------
+   Header / Identitas
+   ------------------------------------------------------- */
+.cv-header {
+  border-bottom: 2px solid var(--color-black);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.cv-header h1 {
+  font-family: var(--font-sans);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-black);
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.cv-contact-info {
+  font-size: 13px;
+  color: var(--color-dark);
+  line-height: 1.8;
+}
+
+.cv-contact-info span {
+  margin-right: 4px;
+}
+
+.cv-contact-info a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.cv-socials {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--color-gray);
+}
+
+.cv-socials a {
+  color: var(--color-gray);
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+/* -------------------------------------------------------
+   Sections
+   ------------------------------------------------------- */
+.cv-section {
+  margin-bottom: 24px;
+}
+
+.cv-section-title {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 4px;
+  margin-bottom: 14px;
+}
+
+/* Summary */
+.cv-summary-text {
+  font-size: 13.5px;
+  color: var(--color-dark);
+  line-height: 1.7;
+}
+
+/* Experience / Education Items */
+.cv-item {
+  margin-bottom: 16px;
+  page-break-inside: avoid;
+}
+
+.cv-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.cv-item-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.cv-item-org {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.cv-item-year {
+  font-size: 12px;
+  color: var(--color-gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cv-item-desc {
+  font-size: 13px;
+  color: var(--color-gray);
+  margin-top: 4px;
+  line-height: 1.6;
+}
+
+.cv-item-tags {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cv-tag {
+  font-size: 11px;
+  color: var(--color-light-gray);
+  border: 1px solid var(--color-border);
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+/* Skills */
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 24px;
+}
+
+.cv-skill-item {
+  font-size: 13px;
+  color: var(--color-dark);
+  padding: 3px 0;
+  border-bottom: 1px dotted #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv-skill-name {
+  font-weight: 500;
+}
+
+.cv-skill-level {
+  font-size: 12px;
+  color: var(--color-light-gray);
+}
+
+/* Certificates */
+.cv-cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  page-break-inside: avoid;
+}
+
+.cv-cert-title {
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.cv-cert-issuer {
+  font-size: 12px;
+  color: var(--color-gray);
+}
+
+.cv-cert-year {
+  font-size: 12px;
+  color: var(--color-light-gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* -------------------------------------------------------
+   @media print — Tampilan saat Dicetak
+   ------------------------------------------------------- */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 12px;
+  }
+
+  .cv-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 24px 32px;
+    box-shadow: none;
+  }
+
+  .cv-header h1 {
+    font-size: 22px;
+  }
+
+  .cv-section {
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 16mm 12mm;
+}
