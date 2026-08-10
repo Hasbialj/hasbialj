@@ -707,7 +707,9 @@ function reObserveSkillBars() {
         barObs.unobserve(entry.target);
       }
     });
-  }, { threshold: 0  newBars.forEach(bar => {
+  }, { threshold: 0.2 });
+
+  newBars.forEach(bar => {
     bar.classList.add('observed');
     barObs.observe(bar);
   });
@@ -810,6 +812,4 @@ function initStatCounters() {
   }, { threshold: 0.2 });
 
   statNumbers.forEach(el => observer.observe(el));
-}`
-  };
 }
