@@ -483,5 +483,35 @@ const SITE_DATA = {
 <p>Desain terbaik bukan yang mendapat pujian — tapi yang membuat pekerjaan pengguna menjadi lebih mudah, lebih cepat, dan lebih menyenangkan. Bahkan jika mereka tidak pernah menyadari keberadaannya.</p>
       `
     },
+  ],
+
+  // ============================================================
+  // TESTIMONI / REKOMENDASI
+  // ============================================================
+  testimonials: [
+    {
+      name: "Rekan Tim Proyek",
+      role: "Sesama Mahasiswa — Universitas Langlangbuana",
+      avatar: "R",
+      rating: 5,
+      text: "Hasbial adalah anggota tim yang sangat bisa diandalkan. Dalam pengerjaan proyek skripsi, beliau selalu proaktif mencari solusi teknis dan memastikan deadline terpenuhi. Kemampuan problem-solving-nya sangat baik.",
+      color: "#e94560"
+    },
+    {
+      name: "Supervisor Lapangan",
+      role: "Kepala Operasional — PT. Nokha Warehouse",
+      avatar: "S",
+      rating: 5,
+      text: "Selama bekerja di PT. Nokha, Hasbial menunjukkan dedikasi tinggi dalam pengelolaan gudang dan sistem inventory. Teliti, cekatan, dan selalu siap membantu rekan kerja. Sangat direkomendasikan untuk posisi IT Support maupun operasional.",
+      color: "#7c3aed"
+    },
+    {
+      name: "Koordinator Kegiatan",
+      role: "Pembimbing Akademik — UNLA",
+      avatar: "K",
+      rating: 5,
+      text: "Hasbial memiliki kemampuan komunikasi yang baik dan mudah beradaptasi dengan lingkungan baru. Aktif dalam kegiatan organisasi dan selalu menunjukkan sikap profesional. Mahasiswa yang memiliki potensi besar di bidang IT.",
+      color: "#0ea5e9"
+    }
   ]
 };
