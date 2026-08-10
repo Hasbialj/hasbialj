@@ -5,6 +5,32 @@
  * skill bar animations, form kontak, dan rendering konten dari data.js
  */
 
+// ============================================================
+// GLOBAL LANG STATE
+// ============================================================
+let currentLang = localStorage.getItem('lang') || 'id';
+
+/**
+ * Mengembalikan data yang sudah digabung sesuai bahasa aktif.
+ * Jika EN, data dari LANG_EN menggantikan data SITE_DATA yang relevan.
+ */
+function getActiveData() {
+  if (currentLang === 'en' && typeof LANG_EN !== 'undefined') {
+    return {
+      ...SITE_DATA,
+      profile: { ...SITE_DATA.profile, ...LANG_EN.profile },
+      skills: LANG_EN.skills,
+      timeline: LANG_EN.timeline,
+      projects: SITE_DATA.projects.map((p, i) => ({
+        ...p,
+        ...(LANG_EN.projects[i] || {})
+      })),
+      certificates: SITE_DATA.certificates, // Judul sertifikat tidak diterjemahkan
+    };
+  }
+  return SITE_DATA;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ============================================================
@@ -146,6 +172,79 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================================
+  // LANGUAGE TOGGLE (ID / EN)
+  // ============================================================
+  const langToggle = document.getElementById('lang-toggle');
+  const langLabel  = document.getElementById('lang-label');
+
+  function applyLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang;
+
+    if (langLabel) langLabel.textContent = lang.toUpperCase();
+    if (langToggle) langToggle.classList.toggle('active', lang === 'en');
+
+    // Update static UI elements
+    const ui = typeof LANG_EN !== 'undefined' && lang === 'en' ? LANG_EN.ui : null;
+    
+    const navHome = document.getElementById('nav-home');
+    const navAbout = document.getElementById('nav-about');
+    const navExp = document.getElementById('nav-exp');
+    const navProjects = document.getElementById('nav-projects');
+    const navBlogPrev = document.getElementById('nav-blog-prev');
+    const navContact = document.getElementById('nav-contact');
+    const navBlogCta = document.getElementById('nav-blog-cta');
+    const heroCtaAbout = document.getElementById('hero-cta-about');
+    const heroCtaBlog = document.getElementById('hero-cta-blog');
+    const heroCtaCv = document.getElementById('hero-cta-cv');
+
+    if (ui) {
+      if (navHome) navHome.textContent = ui.nav.home;
+      if (navAbout) navAbout.textContent = ui.nav.about;
+      if (navExp) navExp.textContent = ui.nav.cv;
+      if (navProjects) navProjects.textContent = ui.nav.portfolio;
+      if (navBlogPrev) navBlogPrev.textContent = ui.nav.blog;
+      if (navContact) navContact.textContent = ui.nav.contact;
+      if (navBlogCta) navBlogCta.textContent = ui.nav.read_blog;
+      if (heroCtaAbout) heroCtaAbout.childNodes[0].nodeValue = ui.hero.cta_about + ' ';
+      if (heroCtaBlog) heroCtaBlog.childNodes[0].nodeValue = ui.hero.cta_blog + ' ';
+      if (heroCtaCv) heroCtaCv.childNodes[0].nodeValue = ui.hero.cta_cv + ' ';
+    } else {
+      if (navHome) navHome.textContent = 'Beranda';
+      if (navAbout) navAbout.textContent = 'Tentang';
+      if (navExp) navExp.textContent = 'CV';
+      if (navProjects) navProjects.textContent = 'Portfolio';
+      if (navBlogPrev) navBlogPrev.textContent = 'Blog';
+      if (navContact) navContact.textContent = 'Kontak';
+      if (navBlogCta) navBlogCta.textContent = 'Baca Tulisan →';
+      if (heroCtaAbout) heroCtaAbout.childNodes[0].nodeValue = 'Kenali Saya ';
+      if (heroCtaBlog) heroCtaBlog.childNodes[0].nodeValue = 'Baca Tulisan ';
+      if (heroCtaCv) heroCtaCv.childNodes[0].nodeValue = 'Unduh CV ATS ';
+    }
+
+    // Re-render all content with active language data
+    if (typeof SITE_DATA !== 'undefined') {
+      renderHero();
+      renderAbout();
+      renderExperience();
+      renderProjects();
+      renderCertificates();
+      renderContact();
+      renderFooter();
+    }
+  }
+
+  // Init lang from localStorage
+  applyLang(currentLang);
+
+  if (langToggle) {
+    langToggle.addEventListener('click', () => {
+      applyLang(currentLang === 'id' ? 'en' : 'id');
+    });
+  }
+
+  // ============================================================
   // SCROLL REVEAL ANIMATIONS
   // ============================================================
   const revealEls = document.querySelectorAll('.reveal');
@@ -205,14 +304,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // RENDER KONTEN DARI data.js
   // ============================================================
   if (typeof SITE_DATA !== 'undefined') {
-    renderHero();
-    renderAbout();
-    renderExperience();
-    renderProjects();
-    renderCertificates();
+    // Render sudah dipanggil oleh applyLang() di atas
+    // Hanya render blog preview yang tidak bergantung bahasa
     renderBlogPreview();
-    renderContact();
-    renderFooter();
   }
 
   // ============================================================
@@ -238,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
    ============================================================ */
 
 function renderHero() {
-  const p = SITE_DATA.profile;
+  const p = getActiveData().profile;
 
   // Badge lokasi
   const badge = document.querySelector('.hero-badge-text');
@@ -270,7 +364,7 @@ function renderHero() {
 
 
 function renderAbout() {
-  const p = SITE_DATA.profile;
+  const p = getActiveData().profile;
 
   // Bio paragraphs
   const bioContainer = document.getElementById('about-bio');
@@ -332,7 +426,7 @@ function renderAbout() {
 
 
 function renderExperience() {
-  const { skills, timeline } = SITE_DATA;
+  const { skills, timeline } = getActiveData();
 
   // Skills
   const skillsContainer = document.getElementById('skills-list');
@@ -395,7 +489,7 @@ function renderExperience() {
 
 
 function renderProjects() {
-  const projects = SITE_DATA.projects;
+  const projects = getActiveData().projects;
   const projectsContainer = document.getElementById('projects-grid');
   
   if (!projectsContainer || !projects) return;
@@ -496,7 +590,7 @@ function renderBlogPreview() {
 
 
 function renderContact() {
-  const p = SITE_DATA.profile;
+  const p = getActiveData().profile;
 
   // Social links
   const socialLinksEl = document.getElementById('social-links');
