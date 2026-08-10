@@ -183,7 +183,7 @@ const SITE_DATA = {
       category: "Website",
       year: "2026",
       image: "",
-      url: "http://localhost/hasbialj",
+      url: "",
       github: ""
     }
   ],
