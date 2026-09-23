@@ -17,7 +17,7 @@ const SITE_DATA = {
     name: "Hasbial Jamil Mardia Putra",  // Nama lengkap
     initials: "HJM",                    // Inisial untuk logo
     photo: "Hasbial Jamil Mardia Putra_41155050220081.jpg",  // Foto profil
-    tagline: "Mahasiswa S1 Teknik Informatika dengan fondasi kuat di IT Support, rekayasa perangkat lunak, dan pengolahan data.",
+    tagline: "Fresh Graduate Teknik Informatika — berfokus pada Data Engineering, IT Infrastructure, dan AI-assisted Development.",
     bio_short: "Mahasiswa S1 Teknik Informatika dengan pengalaman pengelolaan platform digital internasional, optimasi sistem, dan minat mendalam pada Data Engineering.",
     location: "Kab. Bandung, Jawa Barat, Indonesia",
     profession: "Software Developer & Data Enthusiast",
@@ -26,10 +26,10 @@ const SITE_DATA = {
 
     // Bio panjang halaman "Tentang Saya"
     bio_long: [
-      "Mahasiswa S1 Teknik Informatika semester akhir di Universitas Langlangbuana dengan fondasi kuat di bidang IT Support, pengembangan perangkat lunak berbasis web, dan rekayasa sistem.",
-      "Berpengalaman dalam pengelolaan operasional platform digital skala internasional, termasuk optimasi metadata produk untuk kebutuhan SEO, konfigurasi sistem pembayaran lintas negara, dan troubleshooting teknis mandiri terhadap kendala server.",
-      "Memiliki minat mendalam pada pengolahan dan rekayasa data, dibuktikan dengan serangkaian sertifikasi di bidang Data Science, Machine Learning, dan Artificial Intelligence dari institusi teknologi terkemuka.",
-      "Siap berkontribusi sebagai Data Engineer Staff dengan membawa kemampuan analitis, ketelitian teknis, dan semangat continuous learning."
+      "Fresh Graduate S1 Teknik Informatika dari Universitas Langlangbuana (2026) yang antusias dan adaptif, dengan dasar kuat di bidang infrastruktur IT, rekayasa perangkat lunak, dan pengolahan data.",
+      "Terbiasa memanfaatkan teknologi Kecerdasan Buatan (AI) — termasuk Google Gemini dan berbagai coding assistant — sebagai bagian dari workflow sehari-hari untuk mengoptimalkan proses pengembangan dan pemecahan masalah teknis.",
+      "Memiliki pengalaman praktis dalam manajemen proyek komersial end-to-end dan eksplorasi lingkungan Linux berbasis WSL untuk operasional server dan command line.",
+      "Dedikasi terhadap continuous learning dibuktikan melalui serangkaian sertifikasi di bidang Data Science, Machine Learning, dan AI dari Dicoding dan Microsoft Elevate Training Center."
     ],
 
     // Nilai/prinsip utama
@@ -79,20 +79,20 @@ const SITE_DATA = {
     {
       year: "2024 — Sekarang",
       type: "work",
-      title: "Digital Asset Merchant",
-      org: "Redbubble",
-      location: "Remote — Platform Internasional",
-      desc: "Membangun dan mengelola etalase digital (online storefront) di platform e-commerce internasional dengan target pasar global. Mengoptimalkan metadata produk (judul, tag, dan deskripsi) menggunakan prinsip SEO untuk meningkatkan visibilitas dan discoverability aset digital. Mengonfigurasi sistem pembayaran lintas negara (ACH transfer/USD) dan memastikan kepatuhan terhadap prosedur verifikasi platform. Melakukan troubleshooting mandiri terhadap kendala teknis server, termasuk analisis dan resolusi error 400 Bad Request saat proses bulk upload aset beresolusi tinggi. Mengelola siklus unggah konten digital secara sistematis dengan memastikan konsistensi kualitas dan kepatuhan terhadap spesifikasi teknis platform.",
-      tags: ["Metadata Optimization", "SEO", "IT Troubleshooting", "ACH/USD Payment", "Digital Operations"]
+      title: "Independent Technical Projects",
+      org: "Self-Directed Learning & Development",
+      location: "Remote — Independent",
+      desc: "Mengeksplorasi dan memanfaatkan ekosistem AI berbasis Google (Gemini) serta berbagai coding assistant seperti Bolt.new, Pear AI, dan Void AI untuk menyelesaikan masalah logika algoritma dan mengakselerasi penulisan kode dalam pengembangan software. Menyusun aturan dan alur kerja berbasis use case menggunakan pendekatan prompt engineering yang terstruktur. Mengeksplorasi Windows Subsystem for Linux (WSL) untuk membiasakan diri dengan lingkungan command line, manajemen file sistem, dan operasional server berbasis Linux. Menerapkan AI tools secara aktif sebagai bagian dari workflow pengembangan untuk meningkatkan efisiensi dan kualitas output teknis.",
+      tags: ["AI Tools Integration", "Gemini", "WSL", "Linux CLI", "Prompt Engineering", "Software Development"]
     },
     {
       year: "2025",
       type: "work",
-      title: "Project Manager / Freelance Video Production",
+      title: "Project Manager / Freelance",
       org: "CekPlagiat",
       location: "Remote — Proyek Freelance",
-      desc: "Mengelola proyek end-to-end pembuatan video promosi komersial untuk layanan deteksi plagiarisme akademik berbasis web. Menyusun script teknis yang menjelaskan alur kerja sistem, fitur utama platform, dan keunggulan layanan (akses 24 jam, berbasis web). Mengkoordinasikan proses produksi dari tahap pra-produksi hingga finalisasi, memastikan pesan teknis tersampaikan secara efektif kepada audiens target. Memvisualisasikan fitur-fitur utama sistem dalam format konten audiovisual yang informatif dan persuasif.",
-      tags: ["Project Management", "Technical Writing", "Video Production", "Client Communication"]
+      desc: "Mengeksekusi proyek end-to-end pembuatan materi promosi komersial untuk layanan deteksi plagiarisme akademik berbasis web. Merumuskan kebutuhan klien menjadi script teknis yang menjelaskan alur kerja sistem dan fitur utama platform (akses 24 jam, tanpa repository). Mengarahkan proses produksi dari tahap pra-produksi hingga finalisasi konten audiovisual vertikal berdurasi 15–20 detik. Memastikan pesan teknis tersampaikan secara efektif kepada audiens target melalui visualisasi fitur yang informatif dan persuasif.",
+      tags: ["Project Management", "Technical Writing", "Client Communication", "Video Production"]
     },
     {
       year: "2022 — 2026",
@@ -119,32 +119,10 @@ const SITE_DATA = {
   // ============================================================
   projects: [
     {
-      id: "redbubble-digital-merchant",
-      title: "Manajemen & Optimasi Aset Digital — Redbubble",
-      description: "Mengelola operasional etalase digital di platform internasional Redbubble. Menangani unggahan aset beresolusi tinggi (5000x5000px, 300 DPI), mengoptimalkan metadata (judul, tag, deskripsi) berbasis SEO, mengonfigurasi jalur pembayaran ACH/USD, serta troubleshooting error 400 Bad Request saat bulk upload.",
-      tech: ["Metadata Optimization", "SEO", "ACH/USD Payment Config", "IT Troubleshooting", "Digital Operations"],
-      category: "Digital Commerce",
-      year: "2024 — Sekarang",
-      image: "",
-      url: "https://www.redbubble.com",
-      github: ""
-    },
-    {
-      id: "cekplagiat-video-promo",
-      title: "Project Management — Video Promosi CekPlagiat",
-      description: "Mengelola proyek end-to-end pembuatan video promosi komersial vertikal (15–20 detik) untuk layanan deteksi plagiarisme akademik. Menyusun script teknis dan arahan visual yang menonjolkan fitur utama seperti 'Tanpa Repository' dan 'Tersedia 24 Jam'.",
-      tech: ["Project Management", "Technical Writing", "Video Production", "Client Communication"],
-      category: "Freelance Project",
-      year: "2025",
-      image: "",
-      url: "",
-      github: ""
-    },
-    {
       id: "sistem-rekomendasi-bahan-masakan",
       title: "Sistem Rekomendasi Bahan Masakan",
-      description: "Sistem rekomendasi bahan masakan berbasis web sebagai project skripsi. Membantu pengguna menemukan kombinasi bahan masakan yang sesuai dengan preferensi dan ketersediaan bahan.",
-      tech: ["PHP", "CodeIgniter", "MySQL", "Algorithm"],
+      description: "Sistem rekomendasi bahan masakan berbasis web sebagai project skripsi. Memproses input preferensi pengguna dan mencocokkannya dengan kombinasi bahan menggunakan algoritma rekomendasi. Merancang skema database relasional dan query SQL untuk pengelolaan data bahan, resep, dan preferensi pengguna.",
+      tech: ["PHP", "CodeIgniter", "MySQL", "Recommendation Algorithm"],
       category: "Web App",
       year: "2026",
       image: "",
@@ -176,13 +154,13 @@ const SITE_DATA = {
     {
       id: "personal-portfolio",
       title: "Personal Portfolio Website",
-      description: "Website portfolio profesional dengan dark/light mode, animasi smooth, dan konten dinamis. Dibangun untuk showcase keahlian dan pengalaman karir.",
+      description: "Website portfolio profesional dengan dark/light mode, animasi smooth, dan konten dinamis. Dibangun dari nol menggunakan Vanilla HTML, CSS, dan JavaScript tanpa framework apapun.",
       tech: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
       category: "Website",
       year: "2026",
       image: "",
-      url: "",
-      github: ""
+      url: "https://hasbialj.github.io/hasbialj/",
+      github: "https://github.com/Hasbialj/hasbialj"
     }
   ],
 
