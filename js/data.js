@@ -20,7 +20,7 @@ const SITE_DATA = {
     tagline: "Mahasiswa S1 Teknik Informatika dengan fondasi kuat di IT Support, rekayasa perangkat lunak, dan pengolahan data.",
     bio_short: "Mahasiswa S1 Teknik Informatika dengan pengalaman pengelolaan platform digital internasional, optimasi sistem, dan minat mendalam pada Data Engineering.",
     location: "Kab. Bandung, Jawa Barat, Indonesia",
-    profession: "Software Developer & IT Support",
+    profession: "Software Developer & Data Enthusiast",
     phone: "089628188728",
     address: "Kp. Babakan Sondari No. 34 RT 01 RW 07, Pangauban, Kec. Katapang, Kab. Bandung 40921",
 
@@ -34,13 +34,13 @@ const SITE_DATA = {
 
     // Nilai/prinsip utama
     values: [
-      { icon: "✦", label: "Teliti & Cekatan", desc: "Memastikan setiap proses pencatatan, pengemasan, dan troubleshoot dilakukan dengan akurat." },
-      { icon: "◈", label: "Komunikatif & Ramah", desc: "Membangun hubungan kerja yang efektif dan pelayanan yang ramah kepada klien." },
-      { icon: "◎", label: "Continuous Growth", desc: "Komitmen tinggi untuk terus belajar teknologi baru dan mengembangkan potensi SDM." }
+      { icon: "✦", label: "Teliti & Analitis", desc: "Memastikan setiap proses teknis, metadata, dan troubleshooting dilakukan dengan akurat dan sistematis." },
+      { icon: "◈", label: "Problem Solver", desc: "Terbiasa menganalisis dan menyelesaikan kendala teknis secara mandiri, dari error server hingga konfigurasi sistem." },
+      { icon: "◎", label: "Continuous Learning", desc: "Aktif mengikuti pelatihan Data Science, AI, dan Machine Learning untuk terus relevan di industri teknologi." }
     ],
 
     // Minat/hobi
-    interests: ["Kegiatan Sosial", "Internet & Teknologi", "IT Infrastructure", "Open Source", "Pengembangan SDM"],
+    interests: ["Data Engineering", "Machine Learning", "IT Infrastructure", "Open Source", "Digital Commerce"],
 
     // Kontak & sosial media
     email: "bhie.dia@gmail.com",
@@ -119,12 +119,23 @@ const SITE_DATA = {
   // ============================================================
   projects: [
     {
-      id: "beligadget",
-      title: "BeliGadget - E-Commerce Platform",
-      description: "Platform e-commerce untuk gadget dengan integrasi payment gateway Midtrans. Fitur lengkap termasuk shopping cart, manajemen produk, dan sistem pembayaran online.",
-      tech: ["PHP", "CodeIgniter", "MySQL", "Midtrans API"],
-      category: "E-Commerce",
-      year: "2024",
+      id: "redbubble-digital-merchant",
+      title: "Manajemen & Optimasi Aset Digital — Redbubble",
+      description: "Mengelola operasional etalase digital di platform internasional Redbubble. Menangani unggahan aset beresolusi tinggi (5000x5000px, 300 DPI), mengoptimalkan metadata (judul, tag, deskripsi) berbasis SEO, mengonfigurasi jalur pembayaran ACH/USD, serta troubleshooting error 400 Bad Request saat bulk upload.",
+      tech: ["Metadata Optimization", "SEO", "ACH/USD Payment Config", "IT Troubleshooting", "Digital Operations"],
+      category: "Digital Commerce",
+      year: "2024 — Sekarang",
+      image: "",
+      url: "https://www.redbubble.com",
+      github: ""
+    },
+    {
+      id: "cekplagiat-video-promo",
+      title: "Project Management — Video Promosi CekPlagiat",
+      description: "Mengelola proyek end-to-end pembuatan video promosi komersial vertikal (15–20 detik) untuk layanan deteksi plagiarisme akademik. Menyusun script teknis dan arahan visual yang menonjolkan fitur utama seperti 'Tanpa Repository' dan 'Tersedia 24 Jam'.",
+      tech: ["Project Management", "Technical Writing", "Video Production", "Client Communication"],
+      category: "Freelance Project",
+      year: "2025",
       image: "",
       url: "",
       github: ""
@@ -141,34 +152,23 @@ const SITE_DATA = {
       github: ""
     },
     {
+      id: "beligadget",
+      title: "BeliGadget — E-Commerce Platform",
+      description: "Platform e-commerce untuk gadget dengan integrasi payment gateway Midtrans. Fitur lengkap termasuk shopping cart, manajemen produk, dan sistem pembayaran online.",
+      tech: ["PHP", "CodeIgniter", "MySQL", "Midtrans API"],
+      category: "E-Commerce",
+      year: "2024",
+      image: "",
+      url: "",
+      github: ""
+    },
+    {
       id: "bimbel-adhiwikarta",
       title: "Sistem Manajemen Bimbel Adhiwikarta",
       description: "Aplikasi manajemen untuk bimbel Adhiwikarta dengan fitur manajemen siswa, jadwal, pembayaran, dan laporan. Mempermudah operasional bimbel sehari-hari.",
       tech: ["PHP", "CodeIgniter", "MySQL"],
       category: "Management System",
       year: "2025",
-      image: "",
-      url: "",
-      github: ""
-    },
-    {
-      id: "perpustakaan",
-      title: "Sistem Perpustakaan Digital",
-      description: "Sistem manajemen perpustakaan dengan fitur katalog buku, peminjaman, pengembalian, dan laporan. Membantu perpustakaan mengelola koleksi dan transaksi peminjaman.",
-      tech: ["PHP", "CodeIgniter", "MySQL"],
-      category: "Management System",
-      year: "2026",
-      image: "",
-      url: "",
-      github: ""
-    },
-    {
-      id: "catshop081",
-      title: "CatShop081 - Online Pet Shop",
-      description: "Platform online shop untuk produk kebutuhan hewan peliharaan dengan sistem katalog dan manajemen produk.",
-      tech: ["PHP", "CodeIgniter", "MySQL"],
-      category: "E-Commerce",
-      year: "2024",
       image: "",
       url: "",
       github: ""
