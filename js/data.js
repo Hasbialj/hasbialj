@@ -370,27 +370,27 @@ const SITE_DATA = {
   // ============================================================
   testimonials: [
     {
-      name: "Rekan Tim Proyek",
-      role: "Sesama Mahasiswa — Universitas Langlangbuana",
-      avatar: "R",
+      name: "Klien Proyek",
+      role: "Pengguna Layanan — CekPlagiat",
+      avatar: "C",
       rating: 5,
-      text: "Hasbial adalah anggota tim yang sangat bisa diandalkan. Dalam pengerjaan proyek skripsi, beliau selalu proaktif mencari solusi teknis dan memastikan deadline terpenuhi. Kemampuan problem-solving-nya sangat baik.",
+      text: "Hasbial menunjukkan profesionalisme tinggi dalam mengeksekusi proyek promosi kami. Ia mampu menerjemahkan kebutuhan teknis platform menjadi materi visual yang komunikatif dan tepat sasaran. Proyek selesai sesuai ekspektasi.",
       color: "#e94560"
     },
     {
-      name: "Supervisor Lapangan",
-      role: "Kepala Operasional — PT. Nokha Warehouse",
-      avatar: "S",
+      name: "Rekan Kolaborator",
+      role: "Sesama Developer — Independent Project",
+      avatar: "D",
       rating: 5,
-      text: "Selama bekerja di PT. Nokha, Hasbial menunjukkan dedikasi tinggi dalam pengelolaan gudang dan sistem inventory. Teliti, cekatan, dan selalu siap membantu rekan kerja. Sangat direkomendasikan untuk posisi IT Support maupun operasional.",
+      text: "Bekerja sama dengan Hasbial dalam eksplorasi AI tools sangat produktif. Ia cepat memahami konsep baru, terstruktur dalam menyusun prompt, dan selalu mendokumentasikan hasilnya dengan rapi. Solid sebagai mitra teknis.",
       color: "#7c3aed"
     },
     {
-      name: "Koordinator Kegiatan",
-      role: "Pembimbing Akademik — UNLA",
-      avatar: "K",
+      name: "Rekan Tim Skripsi",
+      role: "Sesama Mahasiswa — Universitas Langlangbuana",
+      avatar: "R",
       rating: 5,
-      text: "Hasbial memiliki kemampuan komunikasi yang baik dan mudah beradaptasi dengan lingkungan baru. Aktif dalam kegiatan organisasi dan selalu menunjukkan sikap profesional. Mahasiswa yang memiliki potensi besar di bidang IT.",
+      text: "Hasbial adalah anggota tim yang bisa diandalkan. Dalam pengerjaan proyek skripsi, ia selalu proaktif mencari solusi teknis, teliti dalam debugging, dan memastikan setiap deadline terpenuhi.",
       color: "#0ea5e9"
     }
   ]
