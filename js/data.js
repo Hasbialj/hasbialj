@@ -61,7 +61,6 @@ const SITE_DATA = {
     { name: "HTML/CSS",                        category: "technical" },
     { name: "Basic Linux Command Line",        category: "technical" },
     { name: "IT Troubleshooting & Support",    category: "technical" },
-    { name: "Metadata Optimization",           category: "technical" },
     { name: "Data Processing Concepts",        category: "technical" },
     { name: "Web Development (PHP, CodeIgniter)", category: "technical" },
     { name: "Git Version Control",             category: "technical" },
