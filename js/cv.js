@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCvHeader();
   renderCvSummary();
   renderCvExperience();
+  renderCvProjects();
   renderCvEducation();
   renderCvSkills();
   renderCvCertificates();
@@ -81,19 +82,58 @@ function renderCvExperience() {
     return;
   }
 
-  el.innerHTML = workItems.map(item => `
+  el.innerHTML = workItems.map(item => {
+    // Pecah desc berdasarkan titik menjadi bullet points
+    const bullets = item.desc
+      .split('. ')
+      .map(s => s.trim())
+      .filter(s => s.length > 0)
+      .map(s => `<li style="margin-bottom:4px">${s.endsWith('.') ? s : s + '.'}</li>`)
+      .join('');
+
+    return `
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <div>
+            <div class="cv-item-title">${item.title}</div>
+            <div class="cv-item-org">${item.org} &mdash; ${item.location}</div>
+          </div>
+          <div class="cv-item-year">${item.year}</div>
+        </div>
+        <ul style="margin-top:6px;padding-left:16px;font-size:13px;color:#555;line-height:1.7;">
+          ${bullets}
+        </ul>
+        ${item.tags && item.tags.length ? `
+          <div class="cv-item-tags">
+            ${item.tags.map(t => `<span class="cv-tag">${t}</span>`).join('')}
+          </div>
+        ` : ''}
+      </div>
+    `;
+  }).join('');
+}
+
+
+// ----------------------------------------------------------------
+// PROJECTS
+// ----------------------------------------------------------------
+function renderCvProjects() {
+  const el = document.getElementById('cv-projects');
+  if (!el || !SITE_DATA.projects) return;
+
+  el.innerHTML = SITE_DATA.projects.map(item => `
     <div class="cv-item">
       <div class="cv-item-header">
         <div>
           <div class="cv-item-title">${item.title}</div>
-          <div class="cv-item-org">${item.org} &mdash; ${item.location}</div>
+          <div class="cv-item-org">${item.category}</div>
         </div>
         <div class="cv-item-year">${item.year}</div>
       </div>
-      <p class="cv-item-desc">${item.desc}</p>
-      ${item.tags && item.tags.length ? `
+      <p class="cv-item-desc">${item.description}</p>
+      ${item.tech && item.tech.length ? `
         <div class="cv-item-tags">
-          ${item.tags.map(t => `<span class="cv-tag">${t}</span>`).join('')}
+          ${item.tech.map(t => `<span class="cv-tag">${t}</span>`).join('')}
         </div>
       ` : ''}
     </div>
@@ -137,7 +177,7 @@ function renderCvSkills() {
   const el = document.getElementById('cv-skills');
   if (!el || !SITE_DATA.skills) return;
 
-  const catLabels = { technical: 'Technical', creative: 'Creative', soft: 'Soft Skills' };
+  const catLabels = { technical: 'Technical Skills', creative: 'Creative Skills', soft: 'Soft Skills' };
   const grouped = {};
 
   SITE_DATA.skills.forEach(skill => {
@@ -150,13 +190,8 @@ function renderCvSkills() {
     html += `
       <div style="margin-bottom:14px">
         <div style="font-size:11px;font-weight:700;color:#888;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px">${catLabels[cat] || cat}</div>
-        <div class="cv-skills-grid">
-          ${skills.map(s => `
-            <div class="cv-skill-item">
-              <span class="cv-skill-name">${s.name}</span>
-              <span class="cv-skill-level">${s.level}%</span>
-            </div>
-          `).join('')}
+        <div style="font-size:13px;color:#222;line-height:1.8;">
+          ${skills.map(s => `<span style="display:inline-block;margin-right:8px;">${s.name}</span>`).join('<span style="color:#ccc;">|</span> ')}
         </div>
       </div>
     `;

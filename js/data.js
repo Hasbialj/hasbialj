@@ -17,8 +17,8 @@ const SITE_DATA = {
     name: "Hasbial Jamil Mardia Putra",  // Nama lengkap
     initials: "HJM",                    // Inisial untuk logo
     photo: "Hasbial Jamil Mardia Putra_41155050220081.jpg",  // Foto profil
-    tagline: "Mengejar karir profesional dalam IT Support & Operasional — berfokus pada efisiensi dan pengembangan SDM.",
-    bio_short: "Software developer & IT Support berdedikasi tinggi dengan pengalaman manajemen operasional gudang dan pendidikan Teknik Informatika.",
+    tagline: "Mahasiswa S1 Teknik Informatika dengan fondasi kuat di IT Support, rekayasa perangkat lunak, dan pengolahan data.",
+    bio_short: "Mahasiswa S1 Teknik Informatika dengan pengalaman pengelolaan platform digital internasional, optimasi sistem, dan minat mendalam pada Data Engineering.",
     location: "Kab. Bandung, Jawa Barat, Indonesia",
     profession: "Software Developer & IT Support",
     phone: "089628188728",
@@ -26,10 +26,10 @@ const SITE_DATA = {
 
     // Bio panjang halaman "Tentang Saya"
     bio_long: [
-      "Saya Hasbial Jamil Mardia Putra — seorang pengembang perangkat lunak dan spesialis IT Support dari Katapang, Kabupaten Bandung.",
-      "Perjalanan karir saya dibentuk oleh kombinasi pengalaman praktis di industri operasional & logistik (seperti di PT. Nokha Warehouse dan PT. Sarana Pancakarya Nusa) serta pemahaman akademis di bidang Teknik Informatika.",
-      "Pengalaman di lapangan melatih saya untuk menjadi pribadi yang teliti, cekatan, dan memiliki keterampilan komunikasi yang ramah serta solutif dalam menangani kebutuhan klien maupun tim.",
-      "Saat ini saya menempuh pendidikan S1 Teknik Informatika di Universitas Langlangbuana (2022–2026) dengan komitmen untuk terus berkembang dan memberikan kontribusi nyata bagi organisasi."
+      "Mahasiswa S1 Teknik Informatika semester akhir di Universitas Langlangbuana dengan fondasi kuat di bidang IT Support, pengembangan perangkat lunak berbasis web, dan rekayasa sistem.",
+      "Berpengalaman dalam pengelolaan operasional platform digital skala internasional, termasuk optimasi metadata produk untuk kebutuhan SEO, konfigurasi sistem pembayaran lintas negara, dan troubleshooting teknis mandiri terhadap kendala server.",
+      "Memiliki minat mendalam pada pengolahan dan rekayasa data, dibuktikan dengan serangkaian sertifikasi di bidang Data Science, Machine Learning, dan Artificial Intelligence dari institusi teknologi terkemuka.",
+      "Siap berkontribusi sebagai Data Engineer Staff dengan membawa kemampuan analitis, ketelitian teknis, dan semangat continuous learning."
     ],
 
     // Nilai/prinsip utama
@@ -55,14 +55,21 @@ const SITE_DATA = {
   // SKILL
   // ============================================================
   skills: [
-    { name: "IT Support & Troubleshooting",    level: 92, category: "technical" },
-    { name: "Web Development (HTML/CSS/JS)",    level: 90, category: "technical" },
-    { name: "Warehouse & Inventory Management",level: 78, category: "technical" },
-    { name: "Packing & Quality Control",       level: 75, category: "technical" },
-    { name: "Ketelitian & Detail-Oriented",     level: 95, category: "soft"      },
-    { name: "Komunikasi & Pelayanan Client",    level: 90, category: "soft"      },
-    { name: "Cekatan & Adaptabilitas",          level: 92, category: "soft"      },
-    { name: "Kerja Sama Tim",                  level: 88, category: "soft"      },
+    { name: "Python",                          category: "technical" },
+    { name: "SQL",                             category: "technical" },
+    { name: "JavaScript",                      category: "technical" },
+    { name: "HTML/CSS",                        category: "technical" },
+    { name: "Basic Linux Command Line",        category: "technical" },
+    { name: "IT Troubleshooting & Support",    category: "technical" },
+    { name: "Metadata Optimization",           category: "technical" },
+    { name: "Data Processing Concepts",        category: "technical" },
+    { name: "Web Development (PHP, CodeIgniter)", category: "technical" },
+    { name: "Git Version Control",             category: "technical" },
+    { name: "Problem Solving",                 category: "soft"      },
+    { name: "Detail-Oriented",                 category: "soft"      },
+    { name: "Adaptability",                    category: "soft"      },
+    { name: "Client Communication",            category: "soft"      },
+    { name: "Self-directed Learning",          category: "soft"      },
   ],
 
   // ============================================================
@@ -70,31 +77,22 @@ const SITE_DATA = {
   // ============================================================
   timeline: [
     {
-      year: "Juni 2020 — Juli 2020",
+      year: "2024 — Sekarang",
       type: "work",
-      title: "Staff Packing & Operasional",
-      org: "PT. Sarana Pancakarya Nusa",
-      location: "Bandung, ID",
-      desc: "Bertanggung jawab melakukan penataan dan pengemasan barang (packing) secara tepat dan presisi guna mencegah kesalahan saat pengangkatan ke armada angkut sebelum pengiriman.",
-      tags: ["Packing", "Quality Control", "Operasional"]
+      title: "Digital Asset Merchant",
+      org: "Redbubble",
+      location: "Remote — Platform Internasional",
+      desc: "Membangun dan mengelola etalase digital (online storefront) di platform e-commerce internasional dengan target pasar global. Mengoptimalkan metadata produk (judul, tag, dan deskripsi) menggunakan prinsip SEO untuk meningkatkan visibilitas dan discoverability aset digital. Mengonfigurasi sistem pembayaran lintas negara (ACH transfer/USD) dan memastikan kepatuhan terhadap prosedur verifikasi platform. Melakukan troubleshooting mandiri terhadap kendala teknis server, termasuk analisis dan resolusi error 400 Bad Request saat proses bulk upload aset beresolusi tinggi. Mengelola siklus unggah konten digital secara sistematis dengan memastikan konsistensi kualitas dan kepatuhan terhadap spesifikasi teknis platform.",
+      tags: ["Metadata Optimization", "SEO", "IT Troubleshooting", "ACH/USD Payment", "Digital Operations"]
     },
     {
-      year: "Februari 2018 — Juli 2018",
+      year: "2025",
       type: "work",
-      title: "Staff Warehouse",
-      org: "PT. Nokha Warehouse",
-      location: "Bandung, ID",
-      desc: "Membantu pengecekan persediaan gudang (stock checking), menyusun laporan pengiriman dan penyimpanan barang masuk/keluar, serta memastikan barang sampai dengan tepat ke tangan klien.",
-      tags: ["Stock Management", "Laporan Logistik", "Warehouse"]
-    },
-    {
-      year: "2016",
-      type: "milestone",
-      title: "Sertifikat Pembekalan Wawasan Kebangsaan & Bela Negara",
-      org: "Kodam III / Siliwangi",
-      location: "Bandung, ID",
-      desc: "Mendapat sertifikat pembekalan wawasan kebangsaan dan bela negara di lingkungan Pondok Pesantren Kodam III/Siliwangi TA 2016.",
-      tags: ["Bela Negara", "Wawasan Kebangsaan", "Kodam III/Siliwangi"]
+      title: "Project Manager / Freelance Video Production",
+      org: "CekPlagiat",
+      location: "Remote — Proyek Freelance",
+      desc: "Mengelola proyek end-to-end pembuatan video promosi komersial untuk layanan deteksi plagiarisme akademik berbasis web. Menyusun script teknis yang menjelaskan alur kerja sistem, fitur utama platform, dan keunggulan layanan (akses 24 jam, berbasis web). Mengkoordinasikan proses produksi dari tahap pra-produksi hingga finalisasi, memastikan pesan teknis tersampaikan secara efektif kepada audiens target. Memvisualisasikan fitur-fitur utama sistem dalam format konten audiovisual yang informatif dan persuasif.",
+      tags: ["Project Management", "Technical Writing", "Video Production", "Client Communication"]
     },
     {
       year: "2022 — 2026",
@@ -195,6 +193,14 @@ const SITE_DATA = {
   // category: "teknologi" | "kepemimpinan" | "pelatihan" | "penghargaan"
   certificates: [
     {
+      title: "Virtual Roadshow METC x Startup Bandung: End-to-End Data Science for AI",
+      issuer: "Microsoft Elevate Training Center (METC)",
+      year: "29 Mei 2026",
+      category: "teknologi",
+      icon: "📊",
+      url: "sertifikat/5.pdf"
+    },
+    {
       title: "Online Short Course: Meningkatkan Kecerdasan Copilot dengan RAG & Fine-Tuning di Azure",
       issuer: "Microsoft Elevate Training Center (METC)",
       year: "7 Mei 2026",
@@ -219,22 +225,6 @@ const SITE_DATA = {
       url: "sertifikat/3.pdf"
     },
     {
-      title: "Soft Skill Series: Problem Solving & Mindset on Point",
-      issuer: "Microsoft Elevate Training Center (METC)",
-      year: "Mei – Juni 2026",
-      category: "kepemimpinan",
-      icon: "🧠",
-      url: "sertifikat/4.pdf"
-    },
-    {
-      title: "Virtual Roadshow METC x Startup Bandung: End-to-End Data Science for AI",
-      issuer: "Microsoft Elevate Training Center (METC)",
-      year: "29 Mei 2026",
-      category: "teknologi",
-      icon: "📊",
-      url: "sertifikat/5.pdf"
-    },
-    {
       title: "DevCoach 155: Data Science & Machine Learning Algorithms",
       issuer: "Dicoding Indonesia",
       year: "14 Juni 2024",
@@ -243,7 +233,7 @@ const SITE_DATA = {
       url: "sertifikat/6.pdf"
     },
     {
-      title: "DevCoach 236: Rekrut, Ospek, Lepas — Ubah LLM Open-Source Menjadi Asisten Rekrutmen",
+      title: "DevCoach 236: Ubah LLM Open-Source Menjadi Asisten Rekrutmen",
       issuer: "Dicoding Indonesia",
       year: "5 Juni 2026",
       category: "teknologi",
@@ -259,62 +249,6 @@ const SITE_DATA = {
       url: "sertifikat/8.pdf"
     },
     {
-      title: "Webinar Nasional: Transformasi Penulisan Jurnal & Buku Ilmiah via AI",
-      issuer: "CV. Nulis Hemat Indonesia",
-      year: "4 Juli 2025",
-      category: "pelatihan",
-      icon: "✍️",
-      url: "sertifikat/9.pdf"
-    },
-    {
-      title: "Sarasehan Lead and Develop: Membangun Jiwa Kepemimpinan Beretika",
-      issuer: "HMTI Universitas Langlangbuana",
-      year: "2022/2023",
-      category: "kepemimpinan",
-      icon: "🌟",
-      url: "sertifikat/10.pdf"
-    },
-    {
-      title: "Study Club Dasar Pemrograman",
-      issuer: "HMTI Universitas Langlangbuana",
-      year: "Februari 2020",
-      category: "teknologi",
-      icon: "💻",
-      url: "sertifikat/11.pdf"
-    },
-    {
-      title: "Sertifikat Pembekalan Wawasan Kebangsaan & Bela Negara",
-      issuer: "Kodam III / Siliwangi",
-      year: "26–28 Oktober 2016",
-      category: "penghargaan",
-      icon: "🎖️",
-      url: "sertifikat/12.pdf"
-    },
-    {
-      title: "Sertifikat Penghargaan – Table Manner",
-      issuer: "Penyelenggara Workshop",
-      year: "2023",
-      category: "pelatihan",
-      icon: "🍽️",
-      url: "sertifikat/13.pdf"
-    },
-    {
-      title: "METC Soft Skill Series #1 – Problem Solving: Boost Your Career Impact",
-      issuer: "Microsoft Elevate Training Center (METC)",
-      year: "19 Mei 2026",
-      category: "kepemimpinan",
-      icon: "🧠",
-      url: "sertifikat/14.pdf"
-    },
-    {
-      title: "METC Soft Skill Series #3 – Mindset on Point: Cara Berpikir yang Dicari di Dunia Kerja",
-      issuer: "Microsoft Elevate Training Center (METC)",
-      year: "5 Juni 2026",
-      category: "kepemimpinan",
-      icon: "💡",
-      url: "sertifikat/15.pdf"
-    },
-    {
       title: "Seminar Transformasi Digital – Diesnatalis Informatika-29",
       issuer: "HMJ Teknik Informatika, Universitas Langlangbuana",
       year: "27 Februari 2024",
@@ -323,44 +257,12 @@ const SITE_DATA = {
       url: "sertifikat/16.pdf"
     },
     {
-      title: "Juara 1 Purwa Paskibra – Lomba Keterampilan Baris-Berbaris Tingkat Jawa Barat",
-      issuer: "Universitas Nurtanio Bandung",
-      year: "23 April 2016",
-      category: "penghargaan",
-      icon: "🏆",
-      url: "sertifikat/17.pdf"
-    },
-    {
-      title: "Juara III Cabor Sepak Takraw – Pekan Olahraga Pelajar Tingkat Kabupaten Bandung",
-      issuer: "Dinas Pemuda Olahraga dan Pariwisata Kab. Bandung",
-      year: "3–6 Mei 2011",
-      category: "penghargaan",
-      icon: "🥉",
-      url: "sertifikat/18.pdf"
-    },
-    {
-      title: "Peserta Bandung Barat Digital Festival 2017",
-      issuer: "Relawan TIK & Diskominfo Kab. Bandung Barat",
-      year: "2017",
-      category: "pelatihan",
+      title: "Study Club Dasar Pemrograman",
+      issuer: "HMTI Universitas Langlangbuana",
+      year: "Februari 2020",
+      category: "teknologi",
       icon: "💻",
-      url: "sertifikat/19.pdf"
-    },
-    {
-      title: "Panitia Class Meeting Semester Genap 2016",
-      issuer: "OSIS SMA Darul Falah Cihampelas",
-      year: "30 Mei – 4 Juni 2016",
-      category: "kepemimpinan",
-      icon: "🤝",
-      url: "sertifikat/20.pdf"
-    },
-    {
-      title: "Panitia Peringatan Isra Mi'raj Nabi Muhammad SAW 1437 H",
-      issuer: "OSIS SMA Darul Falah Cihampelas",
-      year: "2–5 Mei 2016",
-      category: "kepemimpinan",
-      icon: "🤝",
-      url: "sertifikat/20.pdf"
+      url: "sertifikat/11.pdf"
     },
   ],
 
