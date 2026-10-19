@@ -427,3 +427,6 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Dokumen pribadi - jangan di-push ke GitHub
+surat dan sertifikat/
