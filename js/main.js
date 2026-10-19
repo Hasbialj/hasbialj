@@ -451,19 +451,11 @@ function renderExperience() {
     let html = '';
     categories.forEach(cat => {
       html += `<div class="skill-category-sep">${catLabels[cat] || cat}</div>`;
+      html += `<div class="skill-tags-row">`;
       skills.filter(s => s.category === cat).forEach(skill => {
-        html += `
-          <div class="skill-item reveal">
-            <div class="skill-header">
-              <span class="skill-name">${skill.name}</span>
-              <span class="skill-level">${skill.level}%</span>
-            </div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-level="${skill.level}" style="width:0%"></div>
-            </div>
-          </div>
-        `;
+        html += `<span class="skill-tag-item reveal">${skill.name}</span>`;
       });
+      html += `</div>`;
     });
     skillsContainer.innerHTML = html;
   }

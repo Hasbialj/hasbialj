@@ -2160,3 +2160,29 @@ footer {
   .terminal-fab { bottom: 16px; right: 16px; }
   .cmd-palette-trigger .cmd-shortcut { display: none; }
 }
+
+/* ── Skill Tags (no progress bar) ─────────────────────────── */
+.skill-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.skill-tag-item {
+  display: inline-block;
+  padding: 6px 14px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: var(--color-text);
+  font-family: var(--font-mono);
+}
+.skill-category-sep {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin: 16px 0 8px;
+}
