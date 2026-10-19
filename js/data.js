@@ -134,8 +134,16 @@ const SITE_DATA = {
       github: ""
     },
     {
-      id: "beligadget",
-      title: "BeliGadget — E-Commerce Platform",
+      id: "sistem-informasi-klinik",
+      title: "Sistem Informasi Manajemen Klinik",
+      description: "Aplikasi web manajemen klinik dengan fitur lengkap meliputi pendaftaran pasien, data pemeriksaan, manajemen resep obat, data pembayaran, dan sistem autentikasi pengguna. Membantu operasional klinik dalam mengelola data pasien dan rekam medis secara digital.",
+      tech: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
+      category: "Management System",
+      year: "2024",
+      image: "",
+      url: "",
+      github: ""
+    },
       description: "Platform e-commerce untuk gadget dengan integrasi payment gateway Midtrans. Fitur lengkap termasuk shopping cart, manajemen produk, dan sistem pembayaran online.",
       tech: ["PHP", "CodeIgniter", "MySQL", "Midtrans API"],
       category: "E-Commerce",
