@@ -71,8 +71,6 @@ const SITE_DATA = {
     { name: "Figma",                           category: "familiar"  },
     { name: "TypeScript",                      category: "familiar"  },
     { name: "Postman",                         category: "familiar"  },
-    { name: "Microsoft Azure",                 category: "familiar"  },
-    { name: "Microsoft Fabric",                category: "familiar"  },
     { name: "Problem Solving",                 category: "soft"      },
     { name: "Detail-Oriented",                 category: "soft"      },
     { name: "Adaptability",                    category: "soft"      },
