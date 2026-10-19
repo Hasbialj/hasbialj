@@ -138,6 +138,9 @@ const SITE_DATA = {
     {
       id: "sistem-informasi-klinik",
       title: "Sistem Informasi Manajemen Klinik",
+    {
+      id: "sistem-informasi-klinik",
+      title: "Sistem Informasi Manajemen Klinik",
       description: "Aplikasi web manajemen klinik dengan fitur lengkap meliputi pendaftaran pasien, data pemeriksaan, manajemen resep obat, data pembayaran, dan sistem autentikasi pengguna. Membantu operasional klinik dalam mengelola data pasien dan rekam medis secara digital.",
       tech: ["PHP", "MySQL", "HTML/CSS", "JavaScript"],
       category: "Management System",
@@ -146,6 +149,9 @@ const SITE_DATA = {
       url: "",
       github: ""
     },
+    {
+      id: "beligadget",
+      title: "BeliGadget — E-Commerce Platform",
       description: "Platform e-commerce untuk gadget dengan integrasi payment gateway Midtrans. Fitur lengkap termasuk shopping cart, manajemen produk, dan sistem pembayaran online.",
       tech: ["PHP", "CodeIgniter", "MySQL", "Midtrans API"],
       category: "E-Commerce",
