@@ -177,7 +177,7 @@ function renderCvSkills() {
   const el = document.getElementById('cv-skills');
   if (!el || !SITE_DATA.skills) return;
 
-  const catLabels = { technical: 'Technical Skills', creative: 'Creative Skills', soft: 'Soft Skills' };
+  const catLabels = { technical: 'Technical Skills', familiar: 'Familiar With', creative: 'Creative Skills', soft: 'Soft Skills' };
   const grouped = {};
 
   SITE_DATA.skills.forEach(skill => {

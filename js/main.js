@@ -446,7 +446,7 @@ function renderExperience() {
   const skillsContainer = document.getElementById('skills-list');
   if (skillsContainer && skills) {
     const categories = [...new Set(skills.map(s => s.category))];
-    const catLabels  = { technical: 'Technical', creative: 'Creative', soft: 'Soft Skills' };
+    const catLabels  = { technical: 'Technical', familiar: 'Familiar With', creative: 'Creative', soft: 'Soft Skills' };
 
     let html = '';
     categories.forEach(cat => {
