@@ -92,13 +92,13 @@ const SITE_DATA = {
       tags: ["AI Tools Integration", "Gemini", "WSL", "Linux CLI", "Prompt Engineering", "Software Development"]
     },
     {
-      year: "2025",
+      year: "2024",
       type: "work",
-      title: "Project Manager / Freelance",
-      org: "CekPlagiat",
-      location: "Remote — Proyek Freelance",
-      desc: "Mengeksekusi proyek end-to-end pembuatan materi promosi komersial untuk layanan deteksi plagiarisme akademik berbasis web. Merumuskan kebutuhan klien menjadi script teknis yang menjelaskan alur kerja sistem dan fitur utama platform (akses 24 jam, tanpa repository). Mengarahkan proses produksi dari tahap pra-produksi hingga finalisasi konten audiovisual vertikal berdurasi 15–20 detik. Memastikan pesan teknis tersampaikan secara efektif kepada audiens target melalui visualisasi fitur yang informatif dan persuasif.",
-      tags: ["Project Management", "Technical Writing", "Client Communication", "Video Production"]
+      title: "Web Developer — Sistem Informasi Manajemen Klinik",
+      org: "Project Akademis",
+      location: "Bandung, ID",
+      desc: "Membangun aplikasi web manajemen klinik lengkap berbasis PHP dan MySQL. Mengimplementasikan modul pendaftaran pasien, data pemeriksaan, manajemen resep obat, data pembayaran, dan sistem autentikasi pengguna. Merancang skema database relasional dan memastikan integritas data antar modul berjalan dengan baik.",
+      tags: ["PHP", "MySQL", "HTML/CSS", "JavaScript", "Web Development"]
     },
     {
       year: "2022 — 2026",
