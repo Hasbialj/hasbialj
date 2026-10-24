@@ -13,11 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderCvHeader();
   renderCvSummary();
+  renderCvPublications();
   renderCvExperience();
   renderCvProjects();
   renderCvEducation();
   renderCvSkills();
   renderCvCertificates();
+  renderCvLanguages();
 });
 
 
@@ -45,10 +47,12 @@ function renderCvHeader() {
     contactEl.innerHTML = parts.join(' &nbsp;|&nbsp; ');
   }
 
-  // Sosial
+  // Sosial — hanya tampilkan GitHub dan LinkedIn
   const socialsEl = document.getElementById('cv-socials');
   if (socialsEl && p.socials) {
-    socialsEl.innerHTML = p.socials.map(s =>
+    const allowed = ['github', 'linkedin'];
+    const filtered = p.socials.filter(s => allowed.includes(s.icon.toLowerCase()));
+    socialsEl.innerHTML = filtered.map(s =>
       `<a href="${s.url}" target="_blank" rel="noopener">${s.name}: ${s.url.replace('https://', '')}</a>`
     ).join(' &nbsp;|&nbsp; ');
   }
@@ -63,8 +67,38 @@ function renderCvSummary() {
   const el = document.getElementById('cv-summary');
   if (!el) return;
 
-  const summary = p.bio_long ? p.bio_long.join(' ') : p.bio_short || '';
+  // Gunakan bio_cv (ringkas) jika ada, fallback ke bio_short
+  const summary = p.bio_cv || p.bio_short || '';
   el.innerHTML = `<p class="cv-summary-text">${summary}</p>`;
+}
+
+
+// ----------------------------------------------------------------
+// PUBLIKASI ILMIAH
+// ----------------------------------------------------------------
+function renderCvPublications() {
+  const el = document.getElementById('cv-publications');
+  if (!el || !SITE_DATA.publications || SITE_DATA.publications.length === 0) {
+    if (el) el.parentElement.style.display = 'none';
+    return;
+  }
+
+  el.innerHTML = SITE_DATA.publications.map(pub => `
+    <div class="cv-item">
+      <div class="cv-item-header">
+        <div>
+          <div class="cv-item-title">
+            ${pub.url
+              ? `<a href="${pub.url}" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">${pub.title}</a>`
+              : pub.title
+            }
+          </div>
+          <div class="cv-item-org">${pub.journal} &mdash; ${pub.role}</div>
+        </div>
+        <div class="cv-item-year">${pub.year}</div>
+      </div>
+    </div>
+  `).join('');
 }
 
 
@@ -164,6 +198,7 @@ function renderCvEducation() {
         </div>
         <div class="cv-item-year">${item.year}</div>
       </div>
+      ${item.gpa ? `<p style="font-size:13px;color:#444;margin:4px 0 2px;">IPK: <strong>${item.gpa}</strong></p>` : ''}
       <p class="cv-item-desc">${item.desc}</p>
     </div>
   `).join('');
@@ -217,4 +252,24 @@ function renderCvCertificates() {
       <div class="cv-cert-year">${cert.year}</div>
     </div>
   `).join('');
+}
+
+
+// ----------------------------------------------------------------
+// BAHASA
+// ----------------------------------------------------------------
+function renderCvLanguages() {
+  const el = document.getElementById('cv-languages');
+  if (!el || !SITE_DATA.languages || SITE_DATA.languages.length === 0) return;
+
+  el.innerHTML = `
+    <div style="display:flex;flex-wrap:wrap;gap:16px;">
+      ${SITE_DATA.languages.map(lang => `
+        <div style="min-width:200px;">
+          <span style="font-size:13px;font-weight:600;color:#222;">${lang.name}</span>
+          <span style="font-size:12px;color:#666;display:block;">${lang.level}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
 }

@@ -22,7 +22,6 @@ const SITE_DATA = {
     location: "Kab. Bandung, Jawa Barat, Indonesia",
     profession: "Software Developer & Data Enthusiast",
     phone: "089628188728",
-    address: "Kp. Babakan Sondari No. 34 RT 01 RW 07, Pangauban, Kec. Katapang, Kab. Bandung 40921",
 
     // Bio panjang halaman "Tentang Saya"
     bio_long: [
@@ -31,6 +30,9 @@ const SITE_DATA = {
       "Memiliki pengalaman praktis dalam manajemen proyek komersial end-to-end dan eksplorasi lingkungan Linux berbasis WSL untuk operasional server dan command line.",
       "Dedikasi terhadap continuous learning dibuktikan melalui serangkaian sertifikasi di bidang Data Science, Machine Learning, dan AI dari Dicoding dan Microsoft Elevate Training Center."
     ],
+
+    // Bio ringkas khusus CV ATS (3-4 kalimat)
+    bio_cv: "Fresh Graduate S1 Teknik Informatika Universitas Langlangbuana (IPK 3.37) dengan pengalaman pengembangan web berbasis PHP, MySQL, dan JavaScript. Terbiasa memanfaatkan AI tools dalam workflow pengembangan serta memiliki dasar yang kuat di bidang Data Science dan IT Infrastructure. Membuktikan kompetensi melalui sertifikasi dari Microsoft, Dicoding, dan IDCamp, serta publikasi ilmiah terindeks Garuda.",
 
     // Nilai/prinsip utama
     values: [
@@ -106,6 +108,7 @@ const SITE_DATA = {
       title: "S1 Teknik Informatika",
       org: "Universitas Langlangbuana",
       location: "Bandung, ID",
+      gpa: "3.37",
       desc: "Berfokus pada pengembangan perangkat lunak, sistem informasi, infrastruktur IT, dan jaringan.",
       tags: ["Teknik Informatika", "Web Development", "IT Infrastructure"]
     },
@@ -259,6 +262,29 @@ const SITE_DATA = {
       icon: "💻",
       url: "sertifikat/11.pdf"
     },
+  ],
+
+  // ============================================================
+  // BAHASA
+  // ============================================================
+  languages: [
+    { name: "Bahasa Indonesia", level: "Native / Penutur Asli" },
+    { name: "Bahasa Inggris",   level: "Dasar — membaca & menulis (pasif)" },
+    { name: "Bahasa Sunda",     level: "Pasif — paham lisan" },
+    { name: "Bahasa Minang",    level: "Pasif — paham lisan" }
+  ],
+
+  // ============================================================
+  // PUBLIKASI ILMIAH
+  // ============================================================
+  publications: [
+    {
+      title: "Sistem Informasi Geografis Untuk Pemetaan Infrastruktur Pelayanan Publik Di Kota Bandung",
+      journal: "Jurnal Ilmiah — Terindeks Garuda (Garba Rujukan Digital)",
+      year: "2026",
+      role: "Penulis",
+      url: "https://garuda.kemdiktisaintek.go.id/documents/detail/6322456"
+    }
   ],
 
   // ============================================================
