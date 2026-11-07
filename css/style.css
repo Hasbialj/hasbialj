@@ -507,7 +507,7 @@ section {
   font-size: 0.82rem;
   color: var(--color-text-muted);
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 0.2s;
+  animation: fadeInUp 0.4s ease forwards 0.1s;
 }
 
 .hero-badge .dot {
@@ -530,7 +530,7 @@ section {
   line-height: 1.05;
   margin-bottom: 8px;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 0.4s;
+  animation: fadeInUp 0.4s ease forwards 0.2s;
 }
 
 .hero-name .highlight {
@@ -546,7 +546,7 @@ section {
   font-weight: 400;
   margin-bottom: 24px;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 0.55s;
+  animation: fadeInUp 0.4s ease forwards 0.3s;
   font-family: var(--font-mono);
 }
 
@@ -562,7 +562,7 @@ section {
   margin-bottom: 40px;
   line-height: 1.7;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 0.7s;
+  animation: fadeInUp 0.4s ease forwards 0.4s;
 }
 
 .hero-actions {
@@ -570,7 +570,7 @@ section {
   gap: 14px;
   flex-wrap: wrap;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 0.9s;
+  animation: fadeInUp 0.4s ease forwards 0.5s;
 }
 
 .hero-scroll {
@@ -583,7 +583,7 @@ section {
   align-items: center;
   gap: 8px;
   opacity: 0;
-  animation: fadeInUp 0.8s ease forwards 1.2s;
+  animation: fadeInUp 0.4s ease forwards 0.6s;
   z-index: 2;
 }
 
@@ -599,7 +599,8 @@ section {
   width: 1px;
   height: 50px;
   background: linear-gradient(to bottom, var(--color-text-faint), transparent);
-  animation: scrollLine 2s ease-in-out infinite;
+  animation: none;
+  opacity: 0.5;
 }
 
 @keyframes scrollLine {
