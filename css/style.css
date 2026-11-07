@@ -340,7 +340,7 @@ section {
 .nav-link.active::after {
   content: '';
   position: absolute;
-  bottom: 5px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
