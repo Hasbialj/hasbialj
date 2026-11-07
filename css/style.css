@@ -125,7 +125,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease, background 0.2s ease, width 0.2s ease, height 0.2s ease;
   mix-blend-mode: normal;
-  will-change: left, top;
 }
 
 .cursor-ring {
@@ -455,9 +454,8 @@ section {
   border-radius: 50%;
   filter: blur(90px);
   opacity: 0.15;
-  animation: blobFloat 12s ease-in-out infinite;
+  animation: none;
   pointer-events: none;
-  will-change: transform;
 }
 .hero-blob-1 {
   width: 600px;
