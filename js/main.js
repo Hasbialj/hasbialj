@@ -350,7 +350,7 @@ function renderHero() {
 
   // Badge lokasi
   const badge = document.querySelector('.hero-badge-text');
-  if (badge) badge.textContent = `Tersedia untuk proyek — ${p.location}`;
+  if (badge) badge.textContent = `Tersedia untuk kerja — ${p.location}`;
 
   // Nama
   const nameEl = document.getElementById('hero-name');
