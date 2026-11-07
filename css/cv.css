@@ -84,7 +84,7 @@ body {
    ------------------------------------------------------- */
 .cv-container {
   max-width: var(--page-width);
-  margin: 72px auto 48px;
+  margin: 12px auto 48px;
   background: var(--color-bg);
   padding: 48px 56px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.15);
