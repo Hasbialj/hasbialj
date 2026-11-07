@@ -16,7 +16,7 @@ const SITE_DATA = {
   profile: {
     name: "Hasbial Jamil Mardia Putra",  // Nama lengkap
     initials: "HJM",                    // Inisial untuk logo
-    photo: "Hasbial Jamil Mardia Putra_41155050220081.jpg",  // Foto profil
+    photo: "foto-profil.jpg",  // Foto profil
     tagline: "Fresh Graduate Teknik Informatika — berfokus pada Web Development, PHP, MySQL, dan AI-assisted Development.",
     bio_short: "Mahasiswa S1 Teknik Informatika dengan pengalaman pengelolaan platform digital internasional, optimasi sistem, dan minat mendalam pada Data Engineering.",
     location: "Kab. Bandung, Jawa Barat, Indonesia",
