@@ -126,6 +126,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transition: transform 0.1s ease, background 0.2s ease, width 0.2s ease, height 0.2s ease;
   mix-blend-mode: normal;
   will-change: left, top;
+}
 
 .cursor-ring {
   width: 36px;
