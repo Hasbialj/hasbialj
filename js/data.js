@@ -48,7 +48,7 @@ const SITE_DATA = {
     email: "bhie.dia@gmail.com",
     socials: [
       { name: "GitHub",    url: "https://github.com/Hasbialj", icon: "github" },
-      { name: "LinkedIn",  url: "https://www.linkedin.com/in/hasbial-jamil-mardia-putra-1877b7425/", icon: "linkedin" },
+      { name: "LinkedIn",  url: "https://www.linkedin.com/in/hasbialjmp/", icon: "linkedin" },
       { name: "Instagram", url: "https://www.instagram.com/m30w1999/", icon: "instagram" }
     ]
   },
