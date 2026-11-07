@@ -53,8 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ring follows with lerp (smooth lag)
     function animateRing() {
-      ringX += (mouseX - ringX) * 0.12;
-      ringY += (mouseY - ringY) * 0.12;
+      ringX += (mouseX - ringX) * 0.25;
+      ringY += (mouseY - ringY) * 0.25;
       cursorRing.style.left = ringX + 'px';
       cursorRing.style.top  = ringY + 'px';
       requestAnimationFrame(animateRing);

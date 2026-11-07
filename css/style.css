@@ -46,9 +46,9 @@
   --radius-full:  999px;
 
   /* Transitions */
-  --transition-fast:   150ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-base:   300ms cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-slow:   600ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast:   100ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:   200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
 
   /* Layout */
   --max-width:    1100px;
@@ -125,7 +125,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease, background 0.2s ease, width 0.2s ease, height 0.2s ease;
   mix-blend-mode: normal;
-}
+  will-change: left, top;
 
 .cursor-ring {
   width: 36px;
@@ -456,6 +456,7 @@ section {
   opacity: 0.15;
   animation: blobFloat 12s ease-in-out infinite;
   pointer-events: none;
+  will-change: transform;
 }
 .hero-blob-1 {
   width: 600px;
@@ -486,8 +487,7 @@ section {
 
 @keyframes blobFloat {
   0%, 100% { transform: translateY(0px) scale(1); }
-  33% { transform: translateY(-30px) scale(1.05); }
-  66% { transform: translateY(20px) scale(0.97); }
+  50% { transform: translateY(-15px) scale(1.02); }
 }
 
 .hero-content {
@@ -620,17 +620,17 @@ section {
 
 .reveal {
   opacity: 0;
-  transform: translateY(32px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .reveal.revealed {
   opacity: 1;
   transform: translateY(0);
 }
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-1 { transition-delay: 0.05s; }
+.reveal-delay-2 { transition-delay: 0.1s; }
+.reveal-delay-3 { transition-delay: 0.15s; }
+.reveal-delay-4 { transition-delay: 0.2s; }
 
 /* ============================================================
    SECTION DIVIDER
