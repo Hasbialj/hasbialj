@@ -40,10 +40,9 @@ function renderCvHeader() {
   const contactEl = document.getElementById('cv-contact');
   if (contactEl) {
     const parts = [];
-    if (p.email)    parts.push(`<a href="mailto:${p.email}">${p.email}</a>`);
-    if (p.phone)    parts.push(`<a href="tel:${p.phone}">${p.phone}</a>`);
+    if (p.email)    parts.push(p.email);
+    if (p.phone)    parts.push(p.phone);
     if (p.location) parts.push(p.location);
-    if (p.address)  parts.push(p.address);
     contactEl.innerHTML = parts.join(' &nbsp;|&nbsp; ');
   }
 
