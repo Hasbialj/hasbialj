@@ -32,7 +32,7 @@ const SITE_DATA = {
     ],
 
     // Bio ringkas khusus CV ATS (3-4 kalimat)
-    bio_cv: "Fresh Graduate S1 Teknik Informatika Universitas Langlangbuana (IPK 3.37) dengan pengalaman pengembangan web berbasis PHP, MySQL, dan JavaScript. Terbiasa memanfaatkan AI tools dalam workflow pengembangan serta memiliki dasar yang kuat di bidang Data Science dan IT Infrastructure. Membuktikan kompetensi melalui sertifikasi dari Microsoft, Dicoding, dan IDCamp, serta publikasi ilmiah terindeks Garuda.",
+    bio_cv: "Fresh Graduate S1 Teknik Informatika Universitas Langlangbuana (IPK 3.37) dengan pengalaman pengembangan web berbasis PHP, MySQL, JavaScript, React, dan TypeScript. Terbiasa memanfaatkan AI tools dalam workflow pengembangan serta memiliki dasar yang kuat di bidang Data Science dan IT Infrastructure. Membuktikan kompetensi melalui sertifikasi dari Microsoft, Dicoding, dan IDCamp, serta publikasi ilmiah terindeks Garuda.",
 
     // Nilai/prinsip utama
     values: [
@@ -60,6 +60,7 @@ const SITE_DATA = {
     { name: "Python",                          category: "technical" },
     { name: "SQL",                             category: "technical" },
     { name: "JavaScript",                      category: "technical" },
+    { name: "TypeScript",                      category: "technical" },
     { name: "HTML/CSS",                        category: "technical" },
     { name: "Basic Linux Command Line",        category: "technical" },
     { name: "IT Troubleshooting & Support",    category: "technical" },
@@ -67,11 +68,11 @@ const SITE_DATA = {
     { name: "Web Development (PHP, CodeIgniter)", category: "technical" },
     { name: "Git Version Control",             category: "technical" },
     { name: "React.js",                        category: "familiar"  },
+    { name: "Ionic Framework",                 category: "familiar"  },
     { name: "Flutter",                         category: "familiar"  },
     { name: "Tailwind CSS",                    category: "familiar"  },
     { name: "Bootstrap",                       category: "familiar"  },
     { name: "Figma",                           category: "familiar"  },
-    { name: "TypeScript",                      category: "familiar"  },
     { name: "Postman",                         category: "familiar"  },
     { name: "Problem Solving",                 category: "soft"      },
     { name: "Detail-Oriented",                 category: "soft"      },
@@ -128,7 +129,17 @@ const SITE_DATA = {
   // ============================================================
   projects: [
     {
-      id: "sistem-rekomendasi-bahan-masakan",
+      id: "kanban-board",
+      title: "Kanban Board App",
+      description: "Aplikasi manajemen tugas berbasis Kanban Board yang dibangun menggunakan Ionic Framework dan React. Fitur lengkap meliputi 5 kolom status (To Do, Doing, Review, Done, Rework), drag & drop antar kolom, CRUD task, filter prioritas, pencarian, subtask dengan progress bar, dan penyimpanan data otomatis via localStorage. Dibuat sebagai Take Home Test Frontend Developer PT Adhikari Inovasi Indonesia (Adhivasindo).",
+      tech: ["Ionic Framework", "React 19", "TypeScript", "dnd-kit", "Vite"],
+      category: "Web App",
+      year: "2026",
+      image: "",
+      url: "",
+      github: "https://github.com/Hasbialj/kanban-board"
+    },
+    {
       title: "Sistem Rekomendasi Bahan Masakan",
       description: "Sistem rekomendasi bahan masakan berbasis web sebagai project skripsi. Memproses input preferensi pengguna dan mencocokkannya dengan kombinasi bahan menggunakan algoritma rekomendasi. Merancang skema database relasional dan query SQL untuk pengelolaan data bahan, resep, dan preferensi pengguna.",
       tech: ["PHP", "CodeIgniter", "MySQL", "Recommendation Algorithm"],
